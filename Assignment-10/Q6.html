@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layered Image Gallery</title>
+    <script src="Q6.js" defer></script>
+    <style>
+        /* Gallery container styling */
+        #gallery-container {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            margin: auto;
+            background-color: #f0f0f0;
+        }
+
+        /* Styling for the image container */
+        .image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            transition: z-index 0.3s ease;
+        }
+
+        /* Set initial z-index for stacking */
+        .image:nth-child(1) {
+            z-index: 1;
+        }
+
+        .image:nth-child(2) {
+            z-index: 2;
+        }
+
+        .image:nth-child(3) {
+            z-index: 3;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div id="gallery-container">
+        <div class="image" id="image1">
+            <img src="lion.jfif" alt="Image 1">
+        </div>
+        <div class="image" id="image2">
+            <img src="kangaroo.jfif" alt="Image 2">
+        </div>
+        <div class="image" id="image3">
+            <img src="cheetah.jfif" alt="Image 3">
+        </div>
+    </div>
+</body>
+</html>

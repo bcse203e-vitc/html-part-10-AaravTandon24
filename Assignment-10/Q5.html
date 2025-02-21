@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Switcher</title>
+    <script src="Q5.js" defer></script>
+    <style>
+        body {
+            transition: all 0.3s ease;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .light-mode {
+            background-color: white;
+            color: black;
+            font-size: 16px;
+        }
+
+        .dark-mode {
+            background-color: #333;
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <div class="container">
+        <h1>Theme Switcher</h1>
+        <button id="lightModeBtn">Light Mode</button>
+        <button id="darkModeBtn">Dark Mode</button>
+    </div>
+</body>
+</html>

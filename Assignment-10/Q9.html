@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Drawing App</title>
+    <script src="Q9.js" defer></script>
+</head>
+<body>
+    <h1>Simple Drawing App</h1>
+
+    <div>
+        <label for="colorPicker">Choose Brush Color: </label>
+        <input type="color" id="colorPicker" value="#000000">
+        
+        <label for="brushSize">Brush Size: </label>
+        <input type="range" id="brushSize" min="1" max="20" value="5">
+    </div>
+
+    <canvas id="drawingCanvas" width="500" height="400" style="border: 1px solid black;"></canvas><br>
+    
+    <button id="clearButton">Clear Canvas</button>
+</body>
+</html>
